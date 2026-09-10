@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Pinboard</Name>
+    <Assembly>C:\Users\wowyo\AppData\Roaming\Autodesk\Revit\Addins\2025\Pinboard\Pinboard.dll</Assembly>
+    <AddInId>7F3A2B1C-9D4E-4A6F-8C2D-1E5F6A7B8C9D</AddInId>
+    <FullClassName>Pinboard.PinboardApp</FullClassName>
+    <VendorId>PINBOARD</VendorId>
+    <VendorDescription>Pinboard - Schedule Comparison Board</VendorDescription>
+  </AddIn>
+</RevitAddIns>

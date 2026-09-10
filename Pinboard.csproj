@@ -1,0 +1,141 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <AssemblyName>Pinboard</AssemblyName>
+    <RootNamespace>Pinboard</RootNamespace>
+    <OutputType>Library</OutputType>
+    <Platforms>x64</Platforms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <OutputPath>C:\Users\wowyo\AppData\Roaming\Autodesk\Revit\Addins\2025\Pinboard\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="RevitAPI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2025\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2025\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\select.png" />
+    <None Include="Resources\select.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\select.png</Link>
+    </None>
+    <Resource Include="Resources\open.png" />
+    <None Include="Resources\open.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\open.png</Link>
+    </None>
+    <Resource Include="Resources\refresh.png" />
+    <None Include="Resources\refresh.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\refresh.png</Link>
+    </None>
+    <Resource Include="Resources\select_small.png" />
+    <None Include="Resources\select_small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\select_small.png</Link>
+    </None>
+    <Resource Include="Resources\open_small.png" />
+    <None Include="Resources\open_small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\open_small.png</Link>
+    </None>
+    <Resource Include="Resources\refresh_small.png" />
+    <None Include="Resources\refresh_small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\refresh_small.png</Link>
+    </None>
+    <Resource Include="Resources\select_dark.png" />
+    <None Include="Resources\select_dark.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\select_dark.png</Link>
+    </None>
+    <Resource Include="Resources\open_dark.png" />
+    <None Include="Resources\open_dark.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\open_dark.png</Link>
+    </None>
+    <Resource Include="Resources\refresh_dark.png" />
+    <None Include="Resources\refresh_dark.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\refresh_dark.png</Link>
+    </None>
+    <Resource Include="Resources\select_dark_small.png" />
+    <None Include="Resources\select_dark_small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\select_dark_small.png</Link>
+    </None>
+    <Resource Include="Resources\open_dark_small.png" />
+    <None Include="Resources\open_dark_small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\open_dark_small.png</Link>
+    </None>
+    <Resource Include="Resources\refresh_dark_small.png" />
+    <None Include="Resources\refresh_dark_small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\refresh_dark_small.png</Link>
+    </None>
+    <Resource Include="Resources\tool_pen.png" />
+    <None Include="Resources\tool_pen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\tool_pen.png</Link>
+    </None>
+    <Resource Include="Resources\tool_eraser.png" />
+    <None Include="Resources\tool_eraser.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\tool_eraser.png</Link>
+    </None>
+    <Resource Include="Resources\tool_pen_dark.png" />
+    <None Include="Resources\tool_pen_dark.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\tool_pen_dark.png</Link>
+    </None>
+    <Resource Include="Resources\tool_eraser_dark.png" />
+    <None Include="Resources\tool_eraser_dark.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\tool_eraser_dark.png</Link>
+    </None>
+    <Resource Include="Resources\tool_print.png" />
+    <None Include="Resources\tool_print.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\tool_print.png</Link>
+    </None>
+    <Resource Include="Resources\tool_print_dark.png" />
+    <None Include="Resources\tool_print_dark.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\tool_print_dark.png</Link>
+    </None>
+    <Resource Include="Resources\tool_select.png" />
+    <None Include="Resources\tool_select.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\tool_select.png</Link>
+    </None>
+    <Resource Include="Resources\tool_select_dark.png" />
+    <None Include="Resources\tool_select_dark.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\tool_select_dark.png</Link>
+    </None>
+    <Resource Include="Resources\tool_edit.png" />
+    <None Include="Resources\tool_edit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\tool_edit.png</Link>
+    </None>
+    <Resource Include="Resources\tool_edit_dark.png" />
+    <None Include="Resources\tool_edit_dark.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>Resources\tool_edit_dark.png</Link>
+    </None>
+  </ItemGroup>
+
+</Project>
